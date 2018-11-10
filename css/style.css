@@ -32,7 +32,6 @@ body {
 }
 .timeline .swiper-container {
   /*height: 600px;*/
-
   height: 100vh;
   width: 100%;
   position: relative;
@@ -100,6 +99,16 @@ body {
           transform: translate3d(20px, 0, 0);
   transition: .2s ease .6s;
 }
+
+//vicmod
+.timeline .swiper-slide .day_number {
+  //line-height: 1.5;
+  opacity: 0;
+  -webkit-transform: translate3d(20px, 0, 0);
+          transform: translate3d(20px, 0, 0);
+  transition: .2s ease .6s;
+}
+
 .timeline .swiper-slide-active .timeline-year {
   opacity: 1;
   -webkit-transform: translate3d(0, 0, 0);
@@ -118,6 +127,15 @@ body {
           transform: translate3d(0, 0, 0);
   transition: .4s ease 1.8s;
 }
+
+//vicmod
+.timeline .swiper-slide-active .day_number {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  transition: .4s ease 1.8s;
+}
+
 .timeline .swiper-pagination {
   right: 15% !important;
   height: 100%;
@@ -288,15 +306,42 @@ span.vicmod_inactive_bullet{
 
 }
 .box{
-  width:200px;
-  height:100px;
-  background:#FFF;
+
+  border-radius: 10px;
+  //border: 10px solid white;
   position: absolute;
   right:25%;top:10%;
   z-index: 2;
+  text-align: center;
+
+  width: 80px;
+  height: 90px;
+  background: #ffffff69;
+  font-size:0.8em;
 }
 
 
 .day_counter .day, .day_counter .day_number{
-  color:black;
+  color:white;
+  z-index: 2;
+  position:  relative;
+  display: block;
+  text-transform: uppercase;
+  padding: 5px;
+  text-align: center;
+}
+.day_counter .day{
+  background: rgba(255,0,0,0.5);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  letter-spacing: 3px;  
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.day_number{
+  font-size: 2.5em;
+  padding-top: 8px !important;
+  font-family: Georgia,Times,Times New Roman,serif;
+  font-weight: 700;
+  font-style: italic;
 }
