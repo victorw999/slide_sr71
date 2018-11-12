@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>title</title>
+    
+    <style>
+    .swiper-slide{
+    height:150vh;}
+  .swiper-slide .mypic {
+  opacity: 0;
+  /*
+  -webkit-transform: translate3d(0, 1000px, 0);
+          transform: translate3d(0, 1000px, 0);
+          */
+  transition: 1.2s ease .6s;
+  transform: translate(0,0);
+  -webkit-transform: translate(0,0);
+}
+ .swiper-slide .mypic {  
+  
+  width: 50%;
+ height: 500px;
+  margin: auto; 
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+ 
+  z-index: 2;
+   top: 43%;
+    left: 44%;
+}
+.swiper-slide::hover .mypic {
+   opacity: 1; 
+   transform: translate(0,-350px);
+    -webkit-transform: translate(0,-350px);
+    -o-transform: translate(0,-350px); 
+    -moz-transform: translate(0,-350px);
+    ransition: 1.4s ease 1.8s;
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="swiper-slide" style="background:black;" data-year="Nov. 1929">         
+
+      <img class="mypic" src="image/raise_tax.png">TEST</img>
+    </div>
+  </body>
+</html>
