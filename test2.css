@@ -1,0 +1,37 @@
+.arrow{
+  position: absolute;
+  top:1%;bottom: 1%;
+  width: 15%; height:15%;
+  background-color: red;
+
+
+  -webkit-clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+  clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+
+  animation: moveArrow 3s 1; // for 3 sec, just 1 time
+}
+
+@keyframes moveArrow {
+  0%{
+    left:1%;
+    background: rgba(248,187,208,1);
+    transform: rotate(0deg);
+  }
+  50%{
+    left:88%;
+  }
+  100%{
+    background: blue;
+    transform: rotate(180deg);
+  }
+}/* moveArrow ending*/
+
+/* num-bar */
+.num-bar-10{
+  position: absolute;
+  top:1%;
+  left:-25%;
+  width: 160%;
+  height:1%;
+  background-color: red;
+}
