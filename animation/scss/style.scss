@@ -1,0 +1,286 @@
+.BODY{
+	font-size:0.5rem;	
+}
+//$bg-color: rgba(255,205,210 ,1);
+$bg-color: white;
+$black: #000;
+$white: #fff;
+
+$orange-1:#fda478;
+$orange-2:#f67d68;
+$orange-3:#e5595c;
+
+$graph-1: linear-gradient(180deg, rgba(128,222,234 ,0.6) 0%, rgba(224,247,250 ,0.6) 100%); //30%
+$graph-2:linear-gradient(180deg, rgba(38,198,218 ,0.6) 0%, rgba(224,247,250 ,0.6) 100%); //50%
+$graph-3:linear-gradient(180deg, rgba(0,151,167 ,0.6) 0%, rgba(224,247,250 ,0.6) 100%); //80%
+$graph-4:linear-gradient(180deg, rgba(0,96,100 ,0.6) 0%, rgba(224,247,250 ,0.6) 100%); //100%
+$graph-5:linear-gradient(180deg, rgba(178,235,242 ,0.6) 0%, rgba(224,247,250 ,0.6) 100%); //20%
+
+//$color-letter: rgba(136,14,79 ,0.9);
+$color-letter:black;
+
+$num-10: rgba(224,247,250 ,1);
+$num-20: rgba(178,235,242 ,1);
+$num-30: rgba(128,222,234 ,1);
+$num-40: rgba(77,208,225 ,1);
+$num-50: rgba(38,198,218 ,1);
+$num-60: rgba(0,188,212 ,1);
+$num-70: rgba(0,172,193 ,1);
+$num-80: rgba(0,151,167 ,1);
+$num-90: rgba(0,131,143 ,1);
+$num-100: rgba(0,96,100 ,1);
+
+.title{text-align: center;}
+
+#footer a:link{color:$color-letter}
+#footer a:visited{color:$color-letter}
+#footer a:hover{color: $black}
+
+body{
+	font-family: 'Open Sans', sans-serif;
+	font-size:0.8rem;
+	background: $bg-color; 
+	color: $color-letter;}
+
+.box{  
+  position: relative;
+  margin: auto;
+  display: block;
+  /*optional background or border*/
+  //border: solid 4px red;
+  
+  margin-top: 4%;
+  width: 650px;
+  height: 450px;
+  background: none;
+}
+//shape ready from clipy tool
+  
+
+.income{
+	position: absolute;
+	left:-10%;
+	text-align:right;		
+	line-height: 1.7rem;
+}
+
+.extra_cost{
+	//position:relative;
+	//float:left;	
+	white-space: nowrap;
+	padding-left:10px;
+	span.odometer{		
+		font-size:1rem !important;
+		line-height:1.1rem !important;
+		margin-top:0px !important;	 
+	}
+}
+
+
+//graphs
+.inner_graph{
+	position: relative;
+	float: left;
+	height: 100%;
+}
+
+.graph_5{
+	position: absolute;
+  top: 0%; height: 6%;
+  left: 0%;
+  width: 15%;  
+	animation: graph_5 30s 1;	
+	.graph_5a{ background:$orange-1;		width: 27%; 	}
+	.graph_5b{ background:$orange-2;		width: 24%; animation: graph_5b 15s 1;	}
+	.graph_5c{ background:$orange-3;		width: 49%; animation: graph_5c 15s 1;	} 
+}
+@keyframes graph_5{   0%	{ width: 0%;}	5%,10%,100%{ width: 15%;}   } 
+@keyframes graph_5b{  0%	{ width: 0%;}	30%	{ width: 0%;}	 40%,100%{ width: 24%;}  }
+@keyframes graph_5c{  0%	{ width: 0%;}	60%	{ width: 0%;}  70%,100%{ width: 49%;}  }
+
+/*******************/
+.income.legend15{ top:7%;}
+.graph_15{
+	position: absolute; top: 7%; height: 6%; left: 0%;  width: 20%;  
+	animation: graph_15 10s 1;	
+	.graph_15a{	background:$orange-1;		width: 26%; 	}
+	.graph_15b{	background:$orange-2;		width: 25%; animation: graph_15b 15s 1;	}
+	.graph_15c{	background:$orange-3;		width: 49%; animation: graph_15c 15s 1;	}
+}
+@keyframes graph_15{   0%	{ width: 0%;}	5%,10%,100%{ width: 20%;}  } 
+@keyframes graph_15b{  0%	{ width: 0%;}	30%	{ width: 0%;}	 40%,100%{ width: 25%;}  }
+@keyframes graph_15c{  0%	{ width: 0%;}	60%	{ width: 0%;}  70%,100%{ width: 49%;}  }
+
+/*******************/
+.income.legend25{ top:14%;}
+.graph_25{
+	position: absolute; top: 14%; height: 6%; left: 0%;  width: 26%;  
+	animation: graph_25 30s 1;	
+	.graph_25a{	background:$orange-1;		width: 27%; 	}
+	.graph_25b{	background:$orange-2;		width: 24%; animation: graph_25b 15s 1;	}
+	.graph_25c{	background:$orange-3;		width: 49%; animation: graph_25c 15s 1;	}
+}
+@keyframes graph_25{   0%	{ width: 0%;}	5%,10%,100%{ width: 26%;}  } 
+@keyframes graph_25b{  0%	{ width: 0%;}	30%	{ width: 0%;}	 40%,100%{ width: 24%;}  }
+@keyframes graph_25c{  0%	{ width: 0%;}	60%	{ width: 0%;}  70%,100%{ width: 49%;}  }
+
+/*******************/
+.income.legend35{ top:21%;}
+.graph_35{
+	position: absolute; top: 21%; height: 6%; left: 0%;  width: 28%;  
+	animation: graph_35 30s 1;	
+	.graph_35a{	background:$orange-1;		width: 27%; 	}
+	.graph_35b{	background:$orange-2;		width: 25%; animation: graph_35b 15s 1;	}
+	.graph_35c{	background:$orange-3;		width: 48%; animation: graph_35c 15s 1;	}
+}
+@keyframes graph_35{   0%	{ width: 0%;}	5%,10%,100%{ width: 28%;}  } 
+@keyframes graph_35b{  0%	{ width: 0%;}	30%	{ width: 0%;}	 40%,100%{ width: 25%;}  }
+@keyframes graph_35c{  0%	{ width: 0%;}	60%	{ width: 0%;}  70%,100%{ width: 48%;}  }
+
+/*******************/
+.income.legend45{ top:28%;}
+.graph_45{
+	position: absolute; top: 28%; height: 6%; left: 0%;  width: 30%;  
+	animation: graph_45 30s 1;	
+	.graph_45a{	background:$orange-1;		width: 26%; 	}
+	.graph_45b{	background:$orange-2;		width: 24%; animation: graph_45b 15s 1;	}
+	.graph_45c{	background:$orange-3;		width: 50%; animation: graph_45c 15s 1;	}
+}
+@keyframes graph_45{   0%	{ width: 0%;}	5%,10%,100%{ width: 30%;}  } 
+@keyframes graph_45b{  0%	{ width: 0%;}	30%	{ width: 0%;}	 40%,100%{ width: 24%;}  }
+@keyframes graph_45c{  0%	{ width: 0%;}	60%	{ width: 0%;}  70%,100%{ width: 50%;}  }
+
+/*******************/
+.income.legend55{ top:35%;}
+.graph_55{
+	position: absolute; top: 35%; height: 6%; left: 0%;  width: 33%;  
+	animation: graph_55 30s 1;	
+	.graph_55a{	background:$orange-1;		width: 27%; 	}
+	.graph_55b{	background:$orange-2;		width: 24%; animation: graph_55b 15s 1;	}
+	.graph_55c{	background:$orange-3;		width: 49%; animation: graph_55c 15s 1;	}
+}
+@keyframes graph_55{   0%	{ width: 0%;}	5%,10%,100%{ width: 33%;}  } 
+@keyframes graph_55b{  0%	{ width: 0%;}	30%	{ width: 0%;}	 40%,100%{ width: 24%;}  }
+@keyframes graph_55c{  0%	{ width: 0%;}	60%	{ width: 0%;}  70%,100%{ width: 49%;}  }
+
+/*******************/
+.income.legend65{ top:42%;}
+.graph_65{
+	position: absolute; top: 42%; height: 6%; left: 0%;  width: 40%;  
+	animation: graph_65 30s 1;	
+	.graph_65a{	background:$orange-1;		width: 27%; 	}
+	.graph_65b{	background:$orange-2;		width: 23%; animation: graph_65b 15s 1;	}
+	.graph_65c{	background:$orange-3;		width: 50%; animation: graph_65c 15s 1;	}
+}
+@keyframes graph_65{   0%	{ width: 0%;}	5%,10%,100%{ width: 40%;}  } 
+@keyframes graph_65b{  0%	{ width: 0%;}	30%	{ width: 0%;}	 40%,100%{ width: 23%;}  }
+@keyframes graph_65c{  0%	{ width: 0%;}	60%	{ width: 0%;}  70%,100%{ width: 50%;}  }
+
+/*******************/
+.income.legend80{ top:49%;}
+.graph_80{
+	position: absolute; top: 49%; height: 6%; left: 0%;  width: 44%;  
+	animation: graph_80 30s 1;	
+	.graph_80a{	background:$orange-1;		width: 23%; 	}
+	.graph_80b{	background:$orange-2;		width: 27%; animation: graph_80b 15s 1;	}
+	.graph_80c{	background:$orange-3;		width: 50%; animation: graph_80c 15s 1;	}
+}
+@keyframes graph_80{   0%	{ width: 0%;}	5%,10%,100%{ width: 44%;}  } 
+@keyframes graph_80b{  0%	{ width: 0%;}	30%	{ width: 0%;}	 40%,100%{ width: 27%;}  }
+@keyframes graph_80c{  0%	{ width: 0%;}	60%	{ width: 0%;}  70%,100%{ width: 50%;}  }
+
+/*******************/
+.income.legend100{ top:56%;}
+.graph_100{
+	position: absolute; top: 56%; height: 6%; left: 0%;  width: 51%;  
+	animation: graph_100 30s 1;	
+	.graph_100a{	background:$orange-1;		width: 27%; 	}
+	.graph_100b{	background:$orange-2;		width: 24%; animation: graph_100b 15s 1;	}
+	.graph_100c{	background:$orange-3;		width: 49%; animation: graph_100c 15s 1;	}
+}
+@keyframes graph_100{   0%	{ width: 0%;}	5%,10%,100%{ width: 51%;}  } 
+@keyframes graph_100b{  0%	{ width: 0%;}	30%	{ width: 0%;}	 40%,100%{ width: 24%;}  }
+@keyframes graph_100c{  0%	{ width: 0%;}	60%	{ width: 0%;}  70%,100%{ width: 49%;}  }
+ 
+/*******************/
+.income.legend120{ top:63%;}
+.graph_120{
+	position: absolute; top: 63%; height: 6%; left: 0%;  width: 59%;  
+	animation: graph_120 30s 1;	
+	.graph_120a{	background:$orange-1;		width: 26%; 	}
+	.graph_120b{	background:$orange-2;		width: 24%; animation: graph_120b 15s 1;	}
+	.graph_120c{	background:$orange-3;		width: 50%; animation: graph_120c 15s 1;	}
+}
+@keyframes graph_120{   0%	{ width: 0%;}	5%,10%,100%{ width: 59%;}  } 
+@keyframes graph_120b{  0%	{ width: 0%;}	30%	{ width: 0%;}	 40%,100%{ width: 24%;}  }
+@keyframes graph_120c{  0%	{ width: 0%;}	60%	{ width: 0%;}  70%,100%{ width: 50%;}  }
+
+/*******************/
+.income.legend160{ top:70%;}
+.graph_160{
+	position: absolute; top: 70%; height: 6%; left: 0%;  width: 90%;  
+	animation: graph_160 30s 1;	
+	.graph_160a{	background:$orange-1;		width: 26%; 	}
+	.graph_160b{	background:$orange-2;		width: 23%; animation: graph_160b 15s 1;	}
+	.graph_160c{	background:$orange-3;		width: 51%; animation: graph_160c 15s 1;	}
+}
+@keyframes graph_160{   0%	{ width: 0%;}	5%,10%,100%{ width: 90%;}  } 
+@keyframes graph_160b{  0%	{ width: 0%;}	30%	{ width: 0%;}	 40%,100%{ width: 23%;}  }
+@keyframes graph_160c{  0%	{ width: 0%;}	60%	{ width: 0%;}  70%,100%{ width: 51%;}  }
+
+.average_bar{
+	position: absolute; top: -50%; height: 150%; left: 45%;  width: 0.4%;  
+	animation: average_bar_animation 15s 1;	
+	background:$orange-3;
+}
+@keyframes average_bar_animation{
+	0%			{ left:0%;}
+	5%,32%	{ left:10%;}
+	36%,60%	{ left:21%;}
+	65%,100%{ left:45%;}
+}
+
+.average_value{
+	position: absolute; top: 0%;  left: 45%;  width:300px; height:100px;
+	animation: average_bar_animation 15s 1;	
+	
+	margin-left:10px;
+	span#average{
+		font-size:2rem;
+		font-weight:700;color:$orange-3;
+	}
+	span.dollar{
+		font-size:1.5rem;
+		color:$orange-3;
+	}
+	
+}
+
+.legend_color{
+	position: absolute; top: 0%;  right: -20%;  width:300px; height:100px;
+	//background:white;
+	.swatch{
+		//background:red;
+		height:1.5em;width:30px;
+		display:inline-block;
+	}
+	span{
+		//background:grey;
+		display:inline-block;
+		height:1.5em;
+		float:left;		
+	}
+	.description{margin-left:10px;}
+	#color_1{background:$orange-1;}
+	#color_2{background:$orange-2;}
+	#color_3{background:$orange-3;}
+}
+
+
+.legend_household{
+	position: absolute; top: 20%;  left: -30%;  width:200px; height:100px;
+	//background:red;
+	//font-size:0.9rem; 
+	font-weight:700;
+	color:$orange-2;
+}
