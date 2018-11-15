@@ -33,6 +33,7 @@ body {
   display: block;
   /*optional background or border*/
   margin-top: 4%;
+  margin-top: 13vh;
   width: 650px;
   height: 450px;
   background: none;
