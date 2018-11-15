@@ -10,6 +10,10 @@
   <link rel='stylesheet' href='font/font2.css'>
   <link rel="stylesheet" href="css/style.css">
 
+  <!-- animation graph src -->
+  <link rel='stylesheet' href='animation/js/odometer.min.js'>
+  <link rel='stylesheet' href='animation/css/odometer_codepen.css'>
+  <link rel="stylesheet" href="animation/css/style.css">
 
 </head>
 
@@ -21,6 +25,131 @@
   <div class="timeline">
     <div class="swiper-container">
       <div class="swiper-wrapper">
+
+        <div class="swiper-slide"
+          style="z-index:100 !important;" data-year="animated graph">
+        <!--  <iframe src="animation/index.html"align="left" scrolling="no"
+            style="position:absolute;height:100vh;width:100%;z-index:100;border:none;"></iframe>-->
+        </div>
+
+        <div class="swiper-slide" style="" data-year="animated graph 2">
+
+<!--**************************************************************************************-->
+<!-- Invisible Box-->
+<div class="box animated_graph">
+
+ <div class='income legend5'>$5-15k</div>
+ <div class="graph_5">
+	 <div class="graph_5a inner_graph"></div>
+	 <div class="graph_5b inner_graph"></div>
+	 <div class="graph_5c inner_graph"></div>
+	 <div class='extra_cost'>&nbsp;&nbsp;$<span id="extra_5" class="odometer-disable">0</span></div>
+ </div>
+
+ <div class='income legend15'>$15-25k</div>
+ <div class="graph_15">
+	 <div class="graph_15a inner_graph"></div>
+	 <div class="graph_15b inner_graph"></div>
+	 <div class="graph_15c inner_graph"></div>
+	 <div class='extra_cost'>&nbsp;&nbsp;$<span id="extra_15" class="odometer-disable">0</span></div>
+ </div>
+
+ <div class='income legend25'>$25-35k</div>
+ <div class="graph_25">
+	 <div class="graph_25a inner_graph"></div>
+	 <div class="graph_25b inner_graph"></div>
+	 <div class="graph_25c inner_graph"></div>
+	 <div class='extra_cost'>&nbsp;&nbsp;$<span id="extra_25" class="odometer-disable">0</span></div>
+ </div>
+
+ <div class='income legend35'>$35-45k</div>
+ <div class="graph_35">
+	 <div class="graph_35a inner_graph"></div>
+	 <div class="graph_35b inner_graph"></div>
+	 <div class="graph_35c inner_graph"></div>
+	 <div class='extra_cost'>&nbsp;&nbsp;$<span id="extra_35" class="odometer-disable">0</span></div>
+ </div>
+
+ <div class='income legend45'>$45-55k</div>
+ <div class="graph_45">
+	 <div class="graph_45a inner_graph"></div>
+	 <div class="graph_45b inner_graph"></div>
+	 <div class="graph_45c inner_graph"></div>
+	 <div class='extra_cost'>&nbsp;&nbsp;$<span id="extra_45" class="odometer-disable">0</span></div>
+ </div>
+
+ <div class='income legend55'>$55-65k</div>
+ <div class="graph_55">
+	 <div class="graph_55a inner_graph"></div>
+	 <div class="graph_55b inner_graph"></div>
+	 <div class="graph_55c inner_graph"></div>
+	 <div class='extra_cost'>&nbsp;&nbsp;$<span id="extra_55" class="odometer-disable">0</span></div>
+ </div>
+
+ <div class='income legend65'>$65-80k</div>
+ <div class="graph_65">
+	 <div class="graph_65a inner_graph"></div>
+	 <div class="graph_65b inner_graph"></div>
+	 <div class="graph_65c inner_graph"></div>
+	 <div class='extra_cost'>&nbsp;&nbsp;$<span id="extra_65" class="odometer-disable">0</span></div>
+ </div>
+
+ <div class='income legend80'>$80-100k</div>
+ <div class="graph_80">
+	 <div class="graph_80a inner_graph"></div>
+	 <div class="graph_80b inner_graph"></div>
+	 <div class="graph_80c inner_graph"></div>
+	 <div class='extra_cost'>&nbsp;&nbsp;$<span id="extra_80" class="odometer-disable">0</span></div>
+ </div>
+
+ <div class='income legend100'>$100-120k</div>
+ <div class="graph_100">
+	 <div class="graph_100a inner_graph"></div>
+	 <div class="graph_100b inner_graph"></div>
+	 <div class="graph_100c inner_graph"></div>
+	 <div class='extra_cost'>&nbsp;&nbsp;$<span id="extra_100" class="odometer-disable">0</span></div>
+ </div>
+
+ <div class='income legend120'>$120-160k</div>
+ <div class="graph_120">
+	 <div class="graph_120a inner_graph"></div>
+	 <div class="graph_120b inner_graph"></div>
+	 <div class="graph_120c inner_graph"></div>
+	 <div class='extra_cost'>&nbsp;&nbsp;$<span id="extra_120" class="odometer-disable">0</span></div>
+ </div>
+
+ <div class='income legend160'>$160k+</div>
+ <div class="graph_160">
+	 <div class="graph_160a inner_graph"></div>
+	 <div class="graph_160b inner_graph"></div>
+	 <div class="graph_160c inner_graph"></div>
+	 <div class='extra_cost'>&nbsp;&nbsp;$<span id="extra_160" class="odometer-disable">0</span></div>
+ </div>
+
+
+ <div class="average_bar"></div>
+ <div class="average_value">AVERAGE:<br><span class="dollar">$</span><span id="average" class="odometer">0</span></div>
+
+ <div class="legend_color">
+	 <p><span class="swatch" id="color_1"></span><span class="description">1. Tariff ($34B) imposed June 6  </span></p><br>
+	 <p><span class="swatch" id="color_2"></span><span class="description">2. Tariff ($16B) imposed August 23  </span></p><br>
+	 <p><span class="swatch" id="color_3"></span><span class="description">3. Tariff ($200B) imposed September 24  </span></p>
+ </div>
+
+ <div class="legend_household">
+   AMERICAN<br>
+	 HOUSEHOLDS<br>
+	 THAT EARN
+ </div>
+
+<div class="graph_title">How Much Will the Trade War <br>Cost a Typical American
+Family?</div>
+
+</div> <!-- End Invisible Box -->
+<!--**************************************************************************************-->
+
+        </div>
+
 
         <div class="swiper-slide" style="background-image: url(image/01.jpg);" data-year="Nov. 1929">
           <div class="swiper-slide-content"><span class="timeline-year">2011</span>
@@ -63,13 +192,14 @@
         </div>
 
         <div class="swiper-slide" style="background-image: url(image/couple_1920.jpg);" data-year="animated graph">
-          <div w3-include-html="animation/index.html"></div>
+
           <!--
           <div class="swiper-slide-content"><span class="timeline-year">2012</span>
             <h4 class="timeline-title">Our nice super title</h4>
             <p class="timeline-text">Lorem ipsum dolor site amet, consectetur adipscing elit, sed do eisumod tempor incididut ut labore et dolore magna aliqua. Ut enim ad mimim venjam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
           </div>
           -->
+
         </div>
         <div class="swiper-slide" style="background-image:url(image/couple_1920.jpg);" data-year="2013">
           <div class="swiper-slide-content"><span class="timeline-year">2013</span>
@@ -126,12 +256,15 @@
     </div>
   </div>
 </div>
+  <!-- animation graph src -->
+  <script src='animation/js/odometer.min.js'></script>
+  <script src="animation/js/index.js"></script>
+
+  <!-- swiper.js -->
   <script src='js/swiper.min-442.js'></script>
-  <script src="js/embed_html.js"></script>
-  <script>
-    includeHTML();
-  </script>
   <script src="js/index.js"></script>
+
+
 
 
 

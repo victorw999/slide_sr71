@@ -127,23 +127,23 @@ body {
 
 //vicmod
 .timeline .swiper-slide .mypic {
- 
+
     /*
-  opacity: 0;  
+  opacity: 0;
 
   transform: translate(0,0);
   -webkit-transform: translate(0,0);
-  -o-transform: translate(0,0); 
+  -o-transform: translate(0,0);
   -moz-transform: translate(0,0);
-   
+
   transition: 1.2s ease .6s;*/
-  
+
 }
 .mypic{
 
 
 display:block;
-width: 50%;height:auto; 
+width: 50%;height:auto;
 
 position: absolute;
 width: 100%;
@@ -151,19 +151,19 @@ width: 50vw;
 top: 10%;
 left: 10%;
 }
- 
+
 .timeline .swiper-slide-active .mypic {
 
-  /* opacity: 1; 
+  /* opacity: 1;
 
-    transition: 1.2s ease .6s; 
+    transition: 1.2s ease .6s;
        transform: translate(0,-3500px);
     -webkit-transform: translate(0,-3500px);
-    -o-transform: translate(0,-3500px); 
+    -o-transform: translate(0,-3500px);
     -moz-transform: translate(0,-3500px);*/
 }
 
-   
+
 //vicmod
 .timeline .swiper-slide .day_number {
   opacity: 0;
@@ -377,7 +377,7 @@ span.vicmod_inactive_bullet{
   background: rgba(255,0,0,0.5);
   padding-top: 10px;
   padding-bottom: 10px;
-  letter-spacing: 3px;  
+  letter-spacing: 3px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
@@ -387,4 +387,9 @@ span.vicmod_inactive_bullet{
   font-family: Georgia,Times,Times New Roman,serif;
   font-weight: 700;
   font-style: italic;
+}
+
+
+.swiper-button-prev, .swiper-button-next{
+  display: none;
 }

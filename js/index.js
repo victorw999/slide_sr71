@@ -10,7 +10,7 @@ var timelineSwiper = new Swiper ('.timeline .swiper-container', {
       el: '.swiper-pagination',
       type:'bullets',
       dynamicBullets:true,
-      dynamicMainBullets:5,
+      dynamicMainBullets:1,
       clickable:true,
       renderBullet: function (index, className) {
           var year = document.querySelectorAll('.swiper-slide')[index].getAttribute('data-year');
@@ -52,9 +52,14 @@ for (var i=0; i<inactives.length; i++){
   console.log(inactives[i]);
 }
 
+// before change to next slide, check if next slide is active to trigger the animated graph
+timelineSwiper.on('slideChangeTransitionStart', function( ){
+  checkActive();
+});
 
 
 timelineSwiper.on('slideChange', function(swiper, paginationEl){
+
   var all_bullets = document.querySelectorAll(
     '.swiper-pagination span[class^=swiper-pagination-bullet]',
   );
@@ -64,7 +69,6 @@ timelineSwiper.on('slideChange', function(swiper, paginationEl){
       console.log(all_bullets[i] + ' REMOVED');
     }
   }
-
 
   var inactives = document.querySelectorAll(
     //'.swiper-pagination span[class^=swiper-pagination-bullet]',
@@ -78,9 +82,6 @@ timelineSwiper.on('slideChange', function(swiper, paginationEl){
     }else{
       console.log('this one has already');
     }
-
   }
-
-
 
 });

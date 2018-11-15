@@ -1,5 +1,6 @@
 .BODY {
   font-size: 0.5rem;
+
 }
 
 .title {
@@ -22,6 +23,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 0.8rem;
   background: white;
+  //background: black;
   color: black;
 }
 
@@ -34,90 +36,69 @@ body {
   width: 650px;
   height: 450px;
   background: none;
+
+  /* to fit the slide show */
+  margin-left: 40%;
+  //margin-top: 10%;
 }
 
-.income {
+.swiper-slide-active .income {
   position: absolute;
   left: -10%;
   text-align: right;
   line-height: 1.7rem;
 }
 
-.extra_cost {
+.swiper-slide-active .extra_cost {
   white-space: nowrap;
   padding-left: 10px;
+  text-align: left;
 }
-.extra_cost span.odometer {
+.swiper-slide-active .extra_cost span.odometer {
   font-size: 1rem !important;
   line-height: 1.1rem !important;
   margin-top: 0px !important;
 }
-
-.inner_graph {
+.swiper-slide-active .inner_graph {
   position: relative;
   float: left;
   height: 100%;
 }
 
-.graph_5 {
+/* add .swiper-slide-active to add trigger */
+.swiper-slide-active .graph_5{
   position: absolute;
   top: 0%;
   height: 6%;
   left: 0%;
   width: 15%;
-  animation: graph_5 30s 1;
+  animation: graph_5 15s 1;
 }
-.graph_5 .graph_5a {
+.swiper-slide-active .graph_5a {
   background: #fda478;
   width: 27%;
+  animation: graph_5a 15s 1;
 }
-.graph_5 .graph_5b {
+.swiper-slide-active .graph_5b {
   background: #f67d68;
   width: 24%;
   animation: graph_5b 15s 1;
 }
-.graph_5 .graph_5c {
+.swiper-slide-active .graph_5c{
   background: #e5595c;
   width: 49%;
   animation: graph_5c 15s 1;
 }
-
-@keyframes graph_5 {
-  0% {
-    width: 0%;
-  }
-  5%,10%,100% {
-    width: 15%;
-  }
-}
-@keyframes graph_5b {
-  0% {
-    width: 0%;
-  }
-  30% {
-    width: 0%;
-  }
-  40%,100% {
-    width: 24%;
-  }
-}
-@keyframes graph_5c {
-  0% {
-    width: 0%;
-  }
-  60% {
-    width: 0%;
-  }
-  70%,100% {
-    width: 49%;
-  }
-}
+@keyframes graph_5  { 0% {width: 0%;} 5%,60%{width:9%} 70%,100% {width:15%;}}
+/*@keyframes graph_5a { 0% {width: 0%;} 30%,100% { width:27%;}}*/
+@keyframes graph_5b { 0% {width: 0%;} 30% {width: 0%;} 40%,100% { width:24%;}}
+@keyframes graph_5c { 0% {width: 0%;} 60% {width: 0%;} 70%,100% { width:49%;}}
 /*******************/
-.income.legend15 {
+.swiper-slide-active .income.legend15 {
   top: 7%;
 }
 
-.graph_15 {
+.swiper-slide-active  .graph_15 {
   position: absolute;
   top: 7%;
   height: 6%;
@@ -125,29 +106,22 @@ body {
   width: 20%;
   animation: graph_15 10s 1;
 }
-.graph_15 .graph_15a {
+.swiper-slide-active  .graph_15a {
   background: #fda478;
   width: 26%;
 }
-.graph_15 .graph_15b {
+.swiper-slide-active  .graph_15b {
   background: #f67d68;
   width: 25%;
   animation: graph_15b 15s 1;
 }
-.graph_15 .graph_15c {
+.swiper-slide-active  .graph_15c {
   background: #e5595c;
   width: 49%;
   animation: graph_15c 15s 1;
 }
 
-@keyframes graph_15 {
-  0% {
-    width: 0%;
-  }
-  5%,10%,100% {
-    width: 20%;
-  }
-}
+@keyframes graph_15 { 0% {width: 0%;} 5%,60%{width:15%} 70%,100% {width:20%;}}
 @keyframes graph_15b {
   0% {
     width: 0%;
@@ -171,11 +145,11 @@ body {
   }
 }
 /*******************/
-.income.legend25 {
+.swiper-slide-active .income.legend25 {
   top: 14%;
 }
 
-.graph_25 {
+.swiper-slide-active .graph_25 {
   position: absolute;
   top: 14%;
   height: 6%;
@@ -183,16 +157,16 @@ body {
   width: 26%;
   animation: graph_25 30s 1;
 }
-.graph_25 .graph_25a {
+.swiper-slide-active .graph_25a {
   background: #fda478;
   width: 27%;
 }
-.graph_25 .graph_25b {
+.swiper-slide-active .graph_25b {
   background: #f67d68;
   width: 24%;
   animation: graph_25b 15s 1;
 }
-.graph_25 .graph_25c {
+.swiper-slide-active .graph_25c {
   background: #e5595c;
   width: 49%;
   animation: graph_25c 15s 1;
@@ -229,11 +203,11 @@ body {
   }
 }
 /*******************/
-.income.legend35 {
+.swiper-slide-active .income.legend35 {
   top: 21%;
 }
 
-.graph_35 {
+.swiper-slide-active .graph_35 {
   position: absolute;
   top: 21%;
   height: 6%;
@@ -241,16 +215,16 @@ body {
   width: 28%;
   animation: graph_35 30s 1;
 }
-.graph_35 .graph_35a {
+.swiper-slide-active .graph_35a {
   background: #fda478;
   width: 27%;
 }
-.graph_35 .graph_35b {
+.swiper-slide-active .graph_35b {
   background: #f67d68;
   width: 25%;
   animation: graph_35b 15s 1;
 }
-.graph_35 .graph_35c {
+.swiper-slide-active .graph_35c {
   background: #e5595c;
   width: 48%;
   animation: graph_35c 15s 1;
@@ -287,11 +261,11 @@ body {
   }
 }
 /*******************/
-.income.legend45 {
+.swiper-slide-active .income.legend45 {
   top: 28%;
 }
 
-.graph_45 {
+.swiper-slide-active .graph_45 {
   position: absolute;
   top: 28%;
   height: 6%;
@@ -299,16 +273,16 @@ body {
   width: 30%;
   animation: graph_45 30s 1;
 }
-.graph_45 .graph_45a {
+.swiper-slide-active .graph_45a {
   background: #fda478;
   width: 26%;
 }
-.graph_45 .graph_45b {
+.swiper-slide-active .graph_45b {
   background: #f67d68;
   width: 24%;
   animation: graph_45b 15s 1;
 }
-.graph_45 .graph_45c {
+.swiper-slide-active .graph_45c {
   background: #e5595c;
   width: 50%;
   animation: graph_45c 15s 1;
@@ -345,11 +319,11 @@ body {
   }
 }
 /*******************/
-.income.legend55 {
+.swiper-slide-active .income.legend55 {
   top: 35%;
 }
 
-.graph_55 {
+.swiper-slide-active .graph_55 {
   position: absolute;
   top: 35%;
   height: 6%;
@@ -357,16 +331,16 @@ body {
   width: 33%;
   animation: graph_55 30s 1;
 }
-.graph_55 .graph_55a {
+.swiper-slide-active .graph_55a {
   background: #fda478;
   width: 27%;
 }
-.graph_55 .graph_55b {
+.swiper-slide-active .graph_55b {
   background: #f67d68;
   width: 24%;
   animation: graph_55b 15s 1;
 }
-.graph_55 .graph_55c {
+.swiper-slide-active .graph_55c {
   background: #e5595c;
   width: 49%;
   animation: graph_55c 15s 1;
@@ -403,11 +377,11 @@ body {
   }
 }
 /*******************/
-.income.legend65 {
+.swiper-slide-active .income.legend65 {
   top: 42%;
 }
 
-.graph_65 {
+.swiper-slide-active .graph_65 {
   position: absolute;
   top: 42%;
   height: 6%;
@@ -415,16 +389,16 @@ body {
   width: 40%;
   animation: graph_65 30s 1;
 }
-.graph_65 .graph_65a {
+.swiper-slide-active .graph_65a {
   background: #fda478;
   width: 27%;
 }
-.graph_65 .graph_65b {
+.swiper-slide-active .graph_65b {
   background: #f67d68;
   width: 23%;
   animation: graph_65b 15s 1;
 }
-.graph_65 .graph_65c {
+.swiper-slide-active .graph_65c {
   background: #e5595c;
   width: 50%;
   animation: graph_65c 15s 1;
@@ -461,11 +435,11 @@ body {
   }
 }
 /*******************/
-.income.legend80 {
+.swiper-slide-active .income.legend80 {
   top: 49%;
 }
 
-.graph_80 {
+.swiper-slide-active .graph_80 {
   position: absolute;
   top: 49%;
   height: 6%;
@@ -473,16 +447,16 @@ body {
   width: 44%;
   animation: graph_80 30s 1;
 }
-.graph_80 .graph_80a {
+.swiper-slide-active .graph_80a {
   background: #fda478;
   width: 23%;
 }
-.graph_80 .graph_80b {
+.swiper-slide-active .graph_80b {
   background: #f67d68;
   width: 27%;
   animation: graph_80b 15s 1;
 }
-.graph_80 .graph_80c {
+.swiper-slide-active .graph_80c {
   background: #e5595c;
   width: 50%;
   animation: graph_80c 15s 1;
@@ -523,7 +497,7 @@ body {
   top: 56%;
 }
 
-.graph_100 {
+.swiper-slide-active .graph_100 {
   position: absolute;
   top: 56%;
   height: 6%;
@@ -531,16 +505,16 @@ body {
   width: 51%;
   animation: graph_100 30s 1;
 }
-.graph_100 .graph_100a {
+.swiper-slide-active .graph_100a {
   background: #fda478;
   width: 27%;
 }
-.graph_100 .graph_100b {
+.swiper-slide-active .graph_100b {
   background: #f67d68;
   width: 24%;
   animation: graph_100b 15s 1;
 }
-.graph_100 .graph_100c {
+.swiper-slide-active .graph_100c {
   background: #e5595c;
   width: 49%;
   animation: graph_100c 15s 1;
@@ -581,7 +555,7 @@ body {
   top: 63%;
 }
 
-.graph_120 {
+.swiper-slide-active .graph_120 {
   position: absolute;
   top: 63%;
   height: 6%;
@@ -589,16 +563,16 @@ body {
   width: 59%;
   animation: graph_120 30s 1;
 }
-.graph_120 .graph_120a {
+.swiper-slide-active .graph_120a {
   background: #fda478;
   width: 26%;
 }
-.graph_120 .graph_120b {
+.swiper-slide-active .graph_120b {
   background: #f67d68;
   width: 24%;
   animation: graph_120b 15s 1;
 }
-.graph_120 .graph_120c {
+.swiper-slide-active .graph_120c {
   background: #e5595c;
   width: 50%;
   animation: graph_120c 15s 1;
@@ -639,7 +613,7 @@ body {
   top: 70%;
 }
 
-.graph_160 {
+.swiper-slide-active .graph_160 {
   position: absolute;
   top: 70%;
   height: 6%;
@@ -647,16 +621,16 @@ body {
   width: 90%;
   animation: graph_160 30s 1;
 }
-.graph_160 .graph_160a {
+.swiper-slide-active .graph_160a {
   background: #fda478;
   width: 26%;
 }
-.graph_160 .graph_160b {
+.swiper-slide-active .graph_160b {
   background: #f67d68;
   width: 23%;
   animation: graph_160b 15s 1;
 }
-.graph_160 .graph_160c {
+.swiper-slide-active .graph_160c {
   background: #e5595c;
   width: 51%;
   animation: graph_160c 15s 1;
@@ -692,14 +666,14 @@ body {
     width: 51%;
   }
 }
-.average_bar {
+.swiper-slide-active .average_bar {
   position: absolute;
   top: -50%;
-  height: 150%;
+  height: 200%;
   left: 45%;
-  width: 0.4%;
+  width: 0.2%;
   animation: average_bar_animation 15s 1;
-  background: #e5595c;
+  background: #e5595c91;;
 }
 
 @keyframes average_bar_animation {
@@ -716,7 +690,7 @@ body {
     left: 45%;
   }
 }
-.average_value {
+.swiper-slide-active .average_value {
   position: absolute;
   top: 0%;
   left: 45%;
@@ -724,6 +698,7 @@ body {
   height: 100px;
   animation: average_bar_animation 15s 1;
   margin-left: 10px;
+  text-align: left;
 }
 .average_value span#average {
   font-size: 2rem;
@@ -738,7 +713,7 @@ body {
 .legend_color {
   position: absolute;
   top: 0%;
-  right: -20%;
+  right: -5%;
   width: 300px;
   height: 100px;
 }
@@ -753,7 +728,9 @@ body {
   float: left;
 }
 .legend_color .description {
-  margin-left: 10px;
+  margin-left: 8px;
+  text-transform: uppercase;
+  font-size: 1.1em;
 }
 .legend_color #color_1 {
   background: #fda478;
@@ -768,9 +745,20 @@ body {
 .legend_household {
   position: absolute;
   top: 20%;
-  left: -30%;
+  left: -25%;
   width: 200px;
   height: 100px;
   font-weight: 700;
   color: #f67d68;
+  text-align: left;
+  font-size: 1.1em;
+}
+
+.graph_title {
+  position: absolute;
+  bottom: -2%;
+  right: 0%;left:0;
+  height: 100px;
+  font-size:2em;
+  font-weight:700;
 }
