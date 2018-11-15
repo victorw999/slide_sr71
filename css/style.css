@@ -332,24 +332,18 @@ span.vicmod_inactive_bullet{
   transition: font-size 1s ease-in-out;
 }
 
+/* day counter*/
 .day_counter{
   /*background-color: white;
   width: 100px; height:100px;
   position:absolute;
   right:25%;    top: 15%;
   margin:auto;
-
-
-
   //border-radius: 2px;
-
   z-index: 2;*/
   background-color: transparent;
-
-
 }
-.box{
-
+.day_counter .vic_box{
   border-radius: 10px;
   //border: 10px solid white;
   position: absolute;
