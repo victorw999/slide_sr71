@@ -383,7 +383,39 @@ span.vicmod_inactive_bullet{
   font-style: italic;
 }
 
-
+/* disable swiper button*/
 .swiper-button-prev, .swiper-button-next{
   display: none;
+}
+
+
+/* table */
+table.us_china_comparison{
+  float:right;
+  width:60vw; height:100%;
+  font-size:2em !important;
+  border-collapse: collapse;
+  text-align: center;
+  font-weight: 400 !important;
+}
+table.us_china_comparison tr td{
+  //border:1px solid #ffffff29;
+  padding: 6px 10px;
+  font-size:0.8em;
+}
+table.us_china_comparison td.flag_tablecell {text-align: right;}
+table.us_china_comparison img.flag{width: 50px;}
+table.us_china_comparison span.action{
+  padding: 4px 32px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size:0.9em;
+}
+table.us_china_comparison span.action.imposed{background:#B43434;}
+table.us_china_comparison span.action.threatened{background:#F18F01;}
+table.us_china_comparison span.action.dialogue{background:#2E86AB;}
+table.us_china_comparison td.detail{
+  font-size:0.8em;
+  text-align: left;
 }
