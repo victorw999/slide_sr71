@@ -407,14 +407,24 @@ table.us_china_comparison td.flag_tablecell {text-align: right;}
 table.us_china_comparison img.flag{width: 50px;}
 table.us_china_comparison span.action{
   padding: 4px 32px;
+  padding: 4px 10px;
   border-radius: 5px;
   text-transform: uppercase;
   font-weight: 600;
-  font-size:0.9em;
+  font-size:1.5em;
+  display: block;
 }
 table.us_china_comparison span.action.imposed{background:#B43434;}
 table.us_china_comparison span.action.threatened{background:#F18F01;}
 table.us_china_comparison span.action.dialogue{background:#2E86AB;}
+
+table.us_china_comparison td.tariff_amount{
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size:1.5em;
+  text-align: left;
+}
+
 table.us_china_comparison td.detail{
   font-size:0.8em;
   text-align: left;
