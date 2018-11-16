@@ -49,7 +49,7 @@ var inactives = document.querySelectorAll(
 //console.log(inactives);
 for (var i=0; i<inactives.length; i++){
   inactives[i].classList.add('vicmod_inactive_bullet');
-  console.log(inactives[i]);
+  //console.log(inactives[i]);
 }
 
 // before change to next slide, check if next slide is active to trigger the animated graph
@@ -66,7 +66,7 @@ timelineSwiper.on('slideChange', function(swiper, paginationEl){
   for (let i=0; i<all_bullets.length; i++){
     if(all_bullets[i].classList.contains('vicmod_inactive_bullet')){
       all_bullets[i].classList.remove('vicmod_inactive_bullet');
-      console.log(all_bullets[i] + ' REMOVED');
+      //console.log(all_bullets[i] + ' REMOVED');
     }
   }
 
@@ -78,9 +78,9 @@ timelineSwiper.on('slideChange', function(swiper, paginationEl){
   for (let i=0; i<inactives.length; i++){
     if(!inactives[i].classList.contains('vicmod_inactive_bullet')){
       inactives[i].classList.add('vicmod_inactive_bullet');
-      console.log(inactives[i] + 'ADDED');
+      //console.log(inactives[i] + 'ADDED');
     }else{
-      console.log('this one has already');
+      //console.log('this one has already');
     }
   }
 

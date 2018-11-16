@@ -1,6 +1,6 @@
 // check if parents has class
 
-function hasClass(element, className) {
+function hasClassInParents(element, className) {
   var regex = new RegExp('\\b' + className + '\\b');
   do {
     if (regex.exec(element.className)) {
@@ -14,7 +14,7 @@ function hasClass(element, className) {
 
 function checkActive(){
   var extra_5 = document.querySelector("#extra_5");
-  if (hasClass(extra_5, 'swiper-slide-active')){
+  if (hasClassInParents(extra_5, 'swiper-slide-active')){
     /* toggle display on/off when slide changes */
     let box_animated_graph = document.querySelector(".box.animated_graph")
     box_animated_graph.style.display = 'block';
@@ -85,12 +85,7 @@ function checkActive(){
   }
 }
 
-function checkShadow(){
-  var nextSlide = document.querySelector(".timeline .swiper-slide-next");
-
-  if (hasClass(nextSlide, 'no-shadow')){
-
-  }
-
-
+function hasClass(element, cls) {
+    return (' ' + element.className + ' ').indexOf(' ' + cls + ' ') > -1;
 }
+ 
