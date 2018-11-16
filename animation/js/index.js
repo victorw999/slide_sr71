@@ -84,3 +84,13 @@ function checkActive(){
     box_animated_graph.style.display = 'none';
   }
 }
+
+function checkShadow(){
+  var nextSlide = document.querySelector(".timeline .swiper-slide-next");
+
+  if (hasClass(nextSlide, 'no-shadow')){
+
+  }
+
+
+}
