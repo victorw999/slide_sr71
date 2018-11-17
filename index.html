@@ -14,9 +14,10 @@
   <link rel='stylesheet' href='animation/js/odometer.min.js'>
   <link rel='stylesheet' href='animation/css/odometer_codepen.css'>
   <link rel="stylesheet" href="animation/css/style.css">
-  <link rel="stylesheet" href="font/fontawesome-free-5.5.0-web/css/all.css"
-    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
-    crossorigin="anonymous">
+ <link rel="stylesheet" href="font/fontawesome-free-5.5.0-web/css/all.css" >
+
+
+
 </head>
 
 <body>
@@ -32,6 +33,14 @@
              style="z-index:100 !important;" data-year="animated graph">
         <!--  <iframe src="animation/index.html"align="left" scrolling="no"
             style="position:absolute;height:100vh;width:100%;z-index:100;border:none;"></iframe>-->
+
+            <div class="swiper-slide-content"><span class="timeline-year"> </span>
+              <h4 class="timeline-title">
+
+
+              </h4>
+
+            </div>
         </div>
 
         <div class="swiper-slide no-shadow"
@@ -154,39 +163,52 @@ Family?</div>
         </div>
 
 
-        <div class="swiper-slide" style="background-image: url(image/01.jpg);" data-year="Nov. 1929">
-          <div class="swiper-slide-content"><span class="timeline-year">day 1</span>
-            <h4 class="timeline-title">Our nice super title</h4>
-            <p class="timeline-text">Lorem ipsum dolor site amet, consectetur adipscing elit, sed do eisumod tempor incididut ut labore et dolore magna aliqua. Ut enim ad mimim venjam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <img class="mypic timeline-text" src="image/raise_tax.png"> </img>
+        <div class="swiper-slide" style="background-image: url(image/01-whitehouse.jpg);" data-year="Nov. 1929">
+          <div class="swiper-slide-content"><span class="timeline-year"> </span>
+
+
+            <h4 class="timeline-title"
+            style="background: white; color: #d4a024;
+                  text-align: center; padding: 10px; ">Nov, 1929</h4>
+            <h4 class="timeline-title" style="transition-delay:2s;">Days after stock market crashed...</h4>
+
           </div>
 
         </div>
 
-        <div class="swiper-slide" style="background-image: url(image/02-hoover-2.jpg);" data-year="Nov. 1929">
-          <div class="swiper-slide-content"><span class="timeline-year">2011</span>
-            <h4 class="timeline-title">Our nice super title</h4>
-            <p class="timeline-text">Lorem ipsum dolor site amet, consectetur adipscing elit, sed do eisumod tempor incididut ut labore et dolore magna aliqua. Ut enim ad mimim venjam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          </div>
+        <div class="swiper-slide no-shadow" style="background-image: url(image/02-hoover.jpg);" data-year="Hoover's Meeting">
+
         </div>
 
-        <div id="slide_hooverdam" class="swiper-slide no-shadow" style="background-image: url(image/05.jpg);" data-year="Fix Economy">
-          <div class="swiper-slide-content"><span class="timeline-year">2011</span>
-            <h4 class="timeline-title">Increase Gov. Spending</h4>
-            <h4 class="timeline-title">Raise Tax <br>Top Income Bracket <span>25% -> 63% </span>
+        <div id="slide_hooverdam" class="swiper-slide no-shadow" style="background-image: url(image/05.jpg);" data-year="Falling Economy">
+          <div class="swiper-slide-content"><span class="timeline-year"></span>
 
-
-              <i class="fas fa-stroopwafel"></i> <!-- this icon's 1) style prefix == fas and 2) icon name == stroopwafel -->
-  <i class="fas fa-stroopwafel"></i> <!-- using an <i> element to reference the icon -->
-  <span class="fas fa-stroopwafel"></span> <!-- using a <span> element to reference the icon -->
-
-  </h4>
+            <h4 class="timeline-title" style=" transition-delay: 4.0s;">
+              <i class="fas fa-play"></i>
+              Increase government spending
+            </h4>
+            <div class="timeline-title" style=" transition-delay: 6.0s;">
+              <i class="fas fa-play"></i>Raise tax on top income bracket <span>25% <i class="fas fa-arrow-right"></i> 63% </span>
+            </div>
             <p class="timeline-text"></p>
           </div>
         </div>
 
+        <div class="swiper-slide no-shadow" style="background-image: url(image/smoot.jpg);" data-year="Smoot-Hawley">
+        </div>
 
-        <div class="swiper-slide" style=" " data-year="Round 1">
+        <div id='panda' class="swiper-slide no-shadow" style="background-image: url(image/background.jpg); " data-year="panda video">
+
+          <div class="swiper-slide-content"><span class="timeline-year"></span>
+            <div class="timeline-title video_area panda"  style=" transition-delay: 1.0s;">
+            </div>
+            <div class="timeline-title video_area eagle" style=" transition-delay: 1.0s;">
+            </div>
+          </div>
+        </div>
+
+
+        <div class="swiper-slide" style="" data-year="Round 1">
           <div class="day_counter">
             <div class="vic_box">
               <span class="day">ROUND</span>

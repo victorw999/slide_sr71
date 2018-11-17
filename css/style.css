@@ -406,6 +406,27 @@ span.vicmod_inactive_bullet{
   display: none;
 }
 
+/* panda */
+#panda .swiper-slide-content .video_area{
+  position: absolute;
+  margin: auto;
+  width: 400px;
+  height: 400px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  top:0px;bottom:0px;
+}
+#panda .swiper-slide-content .video_area.panda{
+  background-image: url(../image/panda.webp);
+  left:-600px;
+}
+
+#panda .swiper-slide-content .video_area.eagle{
+  background-image: url(../image/eagle.gif);
+  left: -153px;
+}
+
+
 
 /* table */
 table.us_china_comparison{
@@ -450,13 +471,18 @@ table.us_china_comparison td.detail{
 
 
 /* */
-#slide_hooverdam h4.timeline-title{
+#slide_hooverdam .timeline-title{
   color: #d4a024;
   background: white;
-  text-align: center;
-  margin: 10px;
+  text-align: left;
+  margin: 10px; padding:10px;
 }
 #slide_hooverdam .swiper-slide-content{
   width: 650px;
   max-width: 650px;
+}
+#slide_hooverdam .timeline-title i.fa-play{
+  left: -50px;
+  position: absolute;
+  font-size: 0.8em;
 }
