@@ -447,3 +447,16 @@ table.us_china_comparison td.detail{
   font-size:0.8em;
   text-align: left;
 }
+
+
+/* */
+#slide_hooverdam h4.timeline-title{
+  color: #d4a024;
+  background: white;
+  text-align: center;
+  margin: 10px;
+}
+#slide_hooverdam .swiper-slide-content{
+  width: 650px;
+  max-width: 650px;
+}
