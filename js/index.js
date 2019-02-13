@@ -54,12 +54,12 @@ for (var i=0; i<inactives.length; i++){
 
 // before change to next slide, check if next slide is active to trigger the animated graph
 timelineSwiper.on('slideChangeTransitionStart', function( ){
-  checkActive();
+  // checkActive();
+  checkActiveForAudio();
 });
 
 
 timelineSwiper.on('slideChange', function(swiper, paginationEl){
-
   var all_bullets = document.querySelectorAll(
     '.swiper-pagination span[class^=swiper-pagination-bullet]',
   );
@@ -83,5 +83,17 @@ timelineSwiper.on('slideChange', function(swiper, paginationEl){
       //console.log('this one has already');
     }
   }
-
 });
+
+
+// check if slide is active for audio's sake
+// REF: https://stackoverflow.com/questions/27368778/how-to-toggle-audio-play-pause-with-one-button-or-link
+function checkActiveForAudio(){
+  var audio_slides= document.querySelector(".slide_audio");
+   if (hasClass(audio_slides, 'swiper-slide-active')){
+
+    audio_slides.querySelector("audio").play();
+  }else{
+    audio_slides.querySelector("audio").pause();
+  }
+}

@@ -15,9 +15,6 @@
   <link rel='stylesheet' href='animation/css/odometer_codepen.css'>
   <link rel="stylesheet" href="animation/css/style.css">
  <link rel="stylesheet" href="font/fontawesome-free-5.5.0-web/css/all.css" >
-
-
-
 </head>
 
 <body>
@@ -29,13 +26,59 @@
     <div class="swiper-container">
       <div class="swiper-wrapper">
 
-        <div id="slide_endgame"class="swiper-slide no-shadow" style="background-image: url(image/background.jpg);" data-year="Title">
-          <div class="swiper-slide-content"><span class="timeline-year"></span>
-            <h4 class="timeline-title title" style=" transition-delay: 2.0s;">
-              How to fight a <span style="color: #d4a024;">tariff war</span> with a panda?
-            </h4>
-          </div>
+        <div id="" class="swiper-slide no-shadow"
+          style="background-image: url(image/background.jpg);" data-year="Title">
+          <div class="swiper-slide-content">
+             <h1>test1</h1>
+          </div> <!-- swiper-slide-content -->
         </div>
+
+        <div id="" class="swiper-slide no-shadow slide_audio"
+          style="background-image: url(image/background.jpg);" data-year="Title">
+          <div class="swiper-slide-content">
+            <h1>audio slide</h1>
+             <h1>if placed at other than the 1st slide will trigger audio play</h1>             
+             <audio id="myAudio" src="audio/rainbow.mp3" preload="auto"></audio>
+
+          </div> <!-- swiper-slide-content -->
+        </div> <!-- slide_audio -->
+
+
+        <div id="" class="swiper-slide no-shadow slide_video"
+          style="background-image: url(image/background.jpg);" data-year="Title">
+          <div class="swiper-slide-content">
+            <video style="width:100%;" autoplay="" muted="" loop="" playsinline=""
+              poster="https://cdn.shopify.com/s/files/1/2313/1393/files/vid_thumb_f517d668-70ae-4a2d-8d6c-d0354a152f13.jpg?7085121300833235741">
+              <source src="video/test2.mp4" type="video/mp4">
+            </video>
+          </div> <!-- swiper-slide-content -->
+        </div> <!-- slide_video -->
+
+        <div id="" class="swiper-slide no-shadow slide_video"
+          style="background-image: url(image/background.jpg);" data-year="Title">
+          <div class="swiper-slide-content">
+            <video style="width:100%;"
+              autoplay="" muted="" loop="" playsinline=""
+              poster="https://cdn.shopify.com/s/files/1/2313/1393/files/vid_thumb_f517d668-70ae-4a2d-8d6c-d0354a152f13.jpg?7085121300833235741">
+              <source src="https://cdn.shopify.com/s/files/1/2313/1393/files/aflex_vidloop_180503.mp4?3191077904938458853" type="video/mp4"></source>
+              <source src="" type="video/webm"></source>
+            </video>
+          </div> <!-- swiper-slide-content -->
+        </div> <!-- slide_video -->
+
+        <div id="" class="swiper-slide no-shadow slide_video"
+          style="background-image: url(image/background.jpg);" data-year="Title">
+          <div class="swiper-slide-content">
+            <video style="width:100%;"
+              autoplay="" muted="false" loop="" playsinline=""
+              poster="https://cdn.shopify.com/s/files/1/2313/1393/files/vid_thumb_f517d668-70ae-4a2d-8d6c-d0354a152f13.jpg?7085121300833235741">
+              <source src="video/test1.mp4" type="video/mp4"></source>
+              <source src="" type="video/webm"></source>
+            </video>
+          </div> <!-- swiper-slide-content -->
+        </div> <!-- slide_video -->
+
+
 
         <div class="swiper-slide" style="background-image: url(image/01-whitehouse.jpg);" data-year="Nov. 1929">
           <div class="swiper-slide-content"><span class="timeline-year"> </span>
@@ -47,40 +90,8 @@
 
         </div>
 
-        <div class="swiper-slide no-shadow" style="background-image: url(image/02-hoover.jpg);" data-year="Hoover's Meeting">
-
-        </div>
-
-        <div id="slide_hooverdam" class="swiper-slide no-shadow" style="background-image: url(image/05.jpg);" data-year="Falling Economy">
-          <div class="swiper-slide-content"><span class="timeline-year"></span>
-
-            <h4 class="timeline-title" style=" transition-delay: 4.0s;">
-              <i class="fas fa-play"></i>
-              Increase government spending
-            </h4>
-            <div class="timeline-title" style=" transition-delay: 6.0s;">
-              <i class="fas fa-play"></i>Raise tax on top income bracket <span>25% <i class="fas fa-arrow-right"></i> 63% </span>
-            </div>
-            <p class="timeline-text"></p>
-          </div>
-        </div>
-
         <div class="swiper-slide no-shadow" style="background-image: url(image/smoot.jpg);" data-year="Smoot-Hawley">
         </div>
-
-
-        <div id="slide_89years2" class="swiper-slide" style="background-image: url(image/89years.jpg);" data-year="2019">
-          <div class="swiper-slide-content"><span class="timeline-year"></span>
-            <h4 class="timeline-title" style=" transition-delay: 1.0s;">
-              Cut to 89 years later...
-            </h4>
-            <div class="timeline-title" style=" transition-delay: 3.5s;font-size: 10em;color: #d4a024;">
-              2018
-            </div>
-            <p class="timeline-text"></p>
-          </div>
-        </div>
-
 
         <div id='panda' class="swiper-slide no-shadow" style="background-image: url(image/background.jpg); " data-year="Epic Battle">
 
@@ -90,409 +101,14 @@
             <div class="timeline-title video_area eagle" style=" transition-delay: 1.0s;">
             </div>
           </div>
-        </div>
-
-
-        <div class="swiper-slide" style="" data-year="Round 1">
-          <div class="day_counter">
-            <div class="vic_box">
-              <span class="day">ROUND</span>
-              <span class="day_number">1</span>
-            </div>
-          </div>
-          <div class="swiper-slide-content"><span class="timeline-year"></span>
-            <!--<h4 class="timeline-title">Title Text</h4>-->
-            <table class="timeline-title us_china_comparison ">
-              <tr>
-                <td class="date">July 6</td>
-                <td class="flag_tablecell">
-                  <img class='flag' src="image/usa.png"></img></td>
-                <td><span class='action imposed'>imposed</span></td>
-                <td class="tariff_amount">$34 B</td>
-                <td class="detail">25% tariff on 818 Chinese goods</td>
-              </tr>
-              <tr>
-                <td></td>
-                <td class="flag_tablecell">
-                  <img class='flag' src="image/usa.png"></img>
-                </td>
-                <td><span class='action threatened'>threatened</span></td>
-                <td class="tariff_amount">$16 B</td>
-                <td class="detail">25% tariff on 284 Chinese goods</td>
-              </tr>
-              <tr>
-                <td></td>
-                <td class="flag_tablecell">
-                  <img class='flag' src="image/china.png"></img>
-                </td>
-                <td><span class='action imposed'>imposed</span></td>
-                <td class="tariff_amount">$34 B</td>
-                <td class="detail">25% on 545 US goods</td>
-              </tr>
-              <tr>
-                <td></td><td></td><td></td><td></td><td></td>
-              </tr>
-              <tr>
-                <td></td><td></td><td></td><td></td><td></td>
-              </tr>
-            </table>
-            <!--
-            <p class="timeline-text">Lorem ipsum dolor site amet, consectetur adipscing elit, sed do eisumod tempor incididut ut labore et dolore magna aliqua. Ut enim ad mimim venjam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            -->
-          </div>
-        </div>
-
-
-        <div class="swiper-slide" style=" " data-year="Threats">
-
-          <div class="swiper-slide-content"><span class="timeline-year"> </span>
-            <!--<h4 class="timeline-title">Title Text</h4>-->
-            <table class="timeline-title us_china_comparison ">
-              <tr>
-                <td class="date">Aug 2</td>
-                <td class="flag_tablecell">
-                  <img class='flag' src="image/usa.png"></img></td>
-                <td><span class='action threatened'>threatened</span></td>
-                <td class="tariff_amount">$200 B</td>
-                <td class="detail">25% on 6000 goods</td>
-              </tr>
-              <tr>
-                <td class="date">Aug 3</td>
-                <td class="flag_tablecell">
-                  <img class='flag' src="image/china.png"></img>
-                </td>
-                <td><span class='action threatened'>threatened</span></td>
-                <td class="tariff_amount">$60 B</td>
-                <td class="detail">5%-25% on 5209 US imports</td>
-              </tr>
-
-              <tr>
-                <td></td><td></td><td></td><td></td><td></td>
-              </tr>
-              <tr>
-                <td></td><td></td><td></td><td></td><td></td>
-              </tr>
-            </table>
-            <!--
-            <p class="timeline-text">Lorem ipsum dolor site amet, consectetur adipscing elit, sed do eisumod tempor incididut ut labore et dolore magna aliqua. Ut enim ad mimim venjam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            -->
-          </div>
-        </div>
-
-        <div class="swiper-slide" style=" " data-year="Round 2">
-          <div class="day_counter">
-            <div class="vic_box">
-              <span class="day">ROUND</span>
-              <span class="day_number">2</span>
-            </div>
-          </div>
-          <div class="swiper-slide-content"><span class="timeline-year"> </span>
-            <!--<h4 class="timeline-title">Title Text</h4>-->
-            <table class="timeline-title us_china_comparison ">
-              <tr>
-                <td class="date">Aug 22</td>
-                <td class="flag_tablecell">
-                  <img class='flag' src="image/usa.png"></img><img class='flag' src="image/china.png"></img></td>
-                <td><span class='action dialogue'>dialogue</span></td>
-                <td class="tariff_amount"> </td>
-                <td class="detail">Mid-level representatives </td>
-              </tr>
-              <tr>
-                <td class="date">Aug 23</td>
-                <td class="flag_tablecell">
-                  <img class='flag' src="image/usa.png"></img>
-                </td>
-                <td><span class='action imposed'>imposed</span></td>
-                <td class="tariff_amount">$16 B</td>
-                <td class="detail">25% on 279 Chinese goods</td>
-              </tr>
-              <tr>
-                <td></td>
-                <td class="flag_tablecell">
-                  <img class='flag' src="image/china.png"></img>
-                </td>
-                <td><span class='action imposed'>imposed</span></td>
-                <td class="tariff_amount">$16 B</td>
-                <td class="detail">25% on 333 US goods</td>
-              </tr>
-
-              <tr>
-                <td></td><td></td><td></td><td></td><td></td>
-              </tr>
-              <tr>
-                <td></td><td></td><td></td><td></td><td></td>
-              </tr>
-            </table>
-            <!--
-            <p class="timeline-text">Lorem ipsum dolor site amet, consectetur adipscing elit, sed do eisumod tempor incididut ut labore et dolore magna aliqua. Ut enim ad mimim venjam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            -->
-          </div>
-        </div>
-
-
-        <div class="swiper-slide" style=" " data-year="Round 3">
-          <div class="day_counter">
-            <div class="vic_box">
-              <span class="day">ROUND</span>
-              <span class="day_number">3</span>
-            </div>
-          </div>
-          <div class="swiper-slide-content"><span class="timeline-year"> </span>
-            <!--<h4 class="timeline-title">Title Text</h4>-->
-            <table class="timeline-title us_china_comparison ">
-              <tr>
-                <td class="date">Sep 12</td>
-                <td class="flag_tablecell">
-                  <img class='flag' src="image/usa.png"></img></td>
-                <td><span class='action dialogue'>dialogue</span></td>
-                <td class="tariff_amount"> </td>
-                <td class="detail">Resume negotiation</td>
-              </tr>
-              <tr>
-                <td class="date">Sep 17</td>
-                <td class="flag_tablecell">
-                  <img class='flag' src="image/usa.png"></img>
-                </td>
-                <td><span class='action threatened'>threatened</span></td>
-                <td class="tariff_amount">$267 B</td>
-                <td class="detail">Add tariff on ALL Chinese goods</td>
-              </tr>
-              <tr>
-                <td class="date">Sep 22</td>
-                <td class="flag_tablecell">
-                  <img class='flag' src="image/china.png"></img>
-                </td>
-                <td><span class='action dialogue'>dialogue</span></td>
-                <td class="tariff_amount"> </td>
-                <td class="detail">Cancel talk</td>
-              </tr>
-              <tr>
-                <td class="date">Sep 24</td>
-                <td class="flag_tablecell">
-                  <img class='flag' src="image/usa.png"></img>
-                </td>
-                <td><span class='action imposed'>imposed</span></td>
-                <td class="tariff_amount">$200 B</td>
-                <td class="detail">10% effecit on 9/24, 25% on 1/1/2019</td>
-              </tr>
-              <tr>
-                <td class="date"></td>
-                <td class="flag_tablecell">
-                  <img class='flag' src="image/china.png"></img>
-                </td>
-                <td><span class='action imposed'>imposed</span></td>
-                <td class="tariff_amount">$60 B</td>
-                <td class="detail">5%~10% on US goods</td>
-              </tr>
-              <tr>
-                <td></td><td></td><td></td><td></td><td></td>
-              </tr>
-              <tr>
-                <td></td><td></td><td></td><td></td><td></td>
-              </tr>
-            </table>
-          </div>
-        </div>
+        </div> <!-- panda -->
 
 
 
-        <div class="swiper-slide no-shadow" style="background-image: url(image/summary_tariff.jpg);"
-          data-year="total tariff">
-          <!--
-          <div class="swiper-slide-content"><span class="timeline-year">2012</span>
-            <h4 class="timeline-title">Our nice super title</h4>
-            <p class="timeline-text">Lorem ipsum dolor site amet, consectetur adipscing elit, sed do eisumod tempor incididut ut labore et dolore magna aliqua. Ut enim ad mimim venjam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          </div>
-          -->
-        </div>
-
-        <div id="slide_endgame"class="swiper-slide no-shadow" style="background-image: url(image/background.jpg);" data-year="Endgame">
-          <div class="swiper-slide-content"><span class="timeline-year"></span>
-            <h4 class="timeline-title title" style=" transition-delay: 2.0s;">
-              What is the endgame?
-            </h4>
-            <h4 class="timeline-title" style=" transition-delay: 4.0s;">
-              <i class="fas fa-play"></i>
-              Chinese trade practices
-            </h4>
-
-          </div>
-        </div>
-
-        <div id="slide_endgame"class="swiper-slide no-shadow" style="background-image: url(image/background.jpg);" data-year="Interconnected">
-          <div class="swiper-slide-content"><span class="timeline-year"></span>
-            <div class="timeline-title" style=" transition-delay: 1.0s;">
-              <i class="fas fa-play"></i>
-              Interconnected World
-            </div>
-            <div class="timeline-title picture_area"  style=" transition-delay: 6s;">
-              <img src="image/homedepot.png"></img>
-            </div>
-          </div>
-        </div>
-
-        <div class="swiper-slide no-shadow"
-             style="z-index:100 !important;" data-year="American Households">
-
-        <!--**************************************************************************************-->
-        <!-- Invisible Box-->
-        <div class="box animated_graph">
-
-        <div class='income legend5'>$5-15k</div>
-        <div class="graph_5">
-        <div class="graph_5a inner_graph"></div>
-        <div class="graph_5b inner_graph"></div>
-        <div class="graph_5c inner_graph"></div>
-        <div class='extra_cost'>&nbsp;&nbsp;$<span id="extra_5" class="odometer-disable">0</span></div>
-        </div>
-
-        <div class='income legend15'>$15-25k</div>
-        <div class="graph_15">
-        <div class="graph_15a inner_graph"></div>
-        <div class="graph_15b inner_graph"></div>
-        <div class="graph_15c inner_graph"></div>
-        <div class='extra_cost'>&nbsp;&nbsp;$<span id="extra_15" class="odometer-disable">0</span></div>
-        </div>
-
-        <div class='income legend25'>$25-35k</div>
-        <div class="graph_25">
-        <div class="graph_25a inner_graph"></div>
-        <div class="graph_25b inner_graph"></div>
-        <div class="graph_25c inner_graph"></div>
-        <div class='extra_cost'>&nbsp;&nbsp;$<span id="extra_25" class="odometer-disable">0</span></div>
-        </div>
-
-        <div class='income legend35'>$35-45k</div>
-        <div class="graph_35">
-        <div class="graph_35a inner_graph"></div>
-        <div class="graph_35b inner_graph"></div>
-        <div class="graph_35c inner_graph"></div>
-        <div class='extra_cost'>&nbsp;&nbsp;$<span id="extra_35" class="odometer-disable">0</span></div>
-        </div>
-
-        <div class='income legend45'>$45-55k</div>
-        <div class="graph_45">
-        <div class="graph_45a inner_graph"></div>
-        <div class="graph_45b inner_graph"></div>
-        <div class="graph_45c inner_graph"></div>
-        <div class='extra_cost'>&nbsp;&nbsp;$<span id="extra_45" class="odometer-disable">0</span></div>
-        </div>
-
-        <div class='income legend55'>$55-65k</div>
-        <div class="graph_55">
-        <div class="graph_55a inner_graph"></div>
-        <div class="graph_55b inner_graph"></div>
-        <div class="graph_55c inner_graph"></div>
-        <div class='extra_cost'>&nbsp;&nbsp;$<span id="extra_55" class="odometer-disable">0</span></div>
-        </div>
-
-        <div class='income legend65'>$65-80k</div>
-        <div class="graph_65">
-        <div class="graph_65a inner_graph"></div>
-        <div class="graph_65b inner_graph"></div>
-        <div class="graph_65c inner_graph"></div>
-        <div class='extra_cost'>&nbsp;&nbsp;$<span id="extra_65" class="odometer-disable">0</span></div>
-        </div>
-
-        <div class='income legend80'>$80-100k</div>
-        <div class="graph_80">
-        <div class="graph_80a inner_graph"></div>
-        <div class="graph_80b inner_graph"></div>
-        <div class="graph_80c inner_graph"></div>
-        <div class='extra_cost'>&nbsp;&nbsp;$<span id="extra_80" class="odometer-disable">0</span></div>
-        </div>
-
-        <div class='income legend100'>$100-120k</div>
-        <div class="graph_100">
-        <div class="graph_100a inner_graph"></div>
-        <div class="graph_100b inner_graph"></div>
-        <div class="graph_100c inner_graph"></div>
-        <div class='extra_cost'>&nbsp;&nbsp;$<span id="extra_100" class="odometer-disable">0</span></div>
-        </div>
-
-        <div class='income legend120'>$120-160k</div>
-        <div class="graph_120">
-        <div class="graph_120a inner_graph"></div>
-        <div class="graph_120b inner_graph"></div>
-        <div class="graph_120c inner_graph"></div>
-        <div class='extra_cost'>&nbsp;&nbsp;$<span id="extra_120" class="odometer-disable">0</span></div>
-        </div>
-
-        <div class='income legend160'>$160k+</div>
-        <div class="graph_160">
-        <div class="graph_160a inner_graph"></div>
-        <div class="graph_160b inner_graph"></div>
-        <div class="graph_160c inner_graph"></div>
-        <div class='extra_cost'>&nbsp;&nbsp;$<span id="extra_160" class="odometer-disable">0</span></div>
-        </div>
 
 
-        <div class="average_bar"></div>
-        <div class="average_value">AVERAGE:<br><span class="dollar">$</span><span id="average" class="odometer">0</span></div>
-
-        <div class="legend_color">
-        <p><span class="swatch" id="color_1"></span><span class="description">1. Tariff ($34B) imposed June 6  </span></p><br>
-        <p><span class="swatch" id="color_2"></span><span class="description">2. Tariff ($16B) imposed August 23  </span></p><br>
-        <p><span class="swatch" id="color_3"></span><span class="description">3. Tariff ($200B) imposed September 24  </span></p>
-        </div>
-
-        <div class="legend_household">
-        AMERICAN<br>
-        HOUSEHOLDS<br>
-        THAT EARN
-        </div>
-
-        <div class="graph_title">How Much Will the Trade War <br>Cost a Typical American
-        Family?</div>
-
-        </div> <!-- End Invisible Box -->
-        <!--**************************************************************************************-->
-
-        </div>
-
-        <div id="slide_hold_breath"class="swiper-slide no-shadow" style="background-image: url(image/hold_breath.jpg);" data-year="Hold breath">
-          <div class="swiper-slide-content"><span class="timeline-year"></span>
-            <div class="timeline-title" style=" transition-delay: 5.0s;">
-              <i class="fas fa-quote-left"></i>
-                <span style='font-size:60px;'> i don't need air ...</span>
-              <i class="fas fa-quote-right"></i>
-            </div>
-            <div class="timeline-title" style=" transition-delay: 9.0s;">
-              <i class="fas fa-quote-left"></i>
-              <span style='font-size:88px;'>me neither...</span>
-              <i class="fas fa-quote-right"></i>
-            </div>
-          </div>
-        </div>
-
-        <div id="slide_g20"class="swiper-slide no-shadow" style="background-image: url(image/g20.jpg);" data-year="G20">
-          <div class="swiper-slide-content"><span class="timeline-year"></span>
-            <div class="timeline-title picture_area"  style=" transition-delay: 1s;">
-              <img src="//image/g20.jpg"></img>
-            </div>
-            <div class="timeline-title" style=" transition-delay: 3.0s;color: #d4a024; background: white; text-align: center; padding: 10px;">
-              NOV.30 & DEC. 1, 2018
-            </div>
-          </div>
-        </div>
-
-        <div id="slide_harmony"class="swiper-slide no-shadow" style="background-image: url(image/harmony.jpg);" data-year="The End">
-          <div class="swiper-slide-content"><span class="timeline-year"></span>
-            <div class="timeline-title" style=" transition-delay: 3.0s;color: #d4a024; background: white; text-align: center; padding: 10px;">
-              THE END
-            </div>
-          </div>
-        </div>
 
 
-        <!--
-        <div class="swiper-slide " style="background-image:url(image/couple_1920.jpg);" data-year="2013">
-          <div class="swiper-slide-content"><span class="timeline-year">2013</span>
-            <h4 class="timeline-title">Our nice super title</h4>
-            <p class="timeline-text">Lorem ipsum dolor site amet, consectetur adipscing elit, sed do eisumod tempor incididut ut labore et dolore magna aliqua. Ut enim ad mimim venjam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          </div>
-        </div>
-        -->
       </div>
       <div class="swiper-button-prev"></div>
       <div class="swiper-button-next"></div>
