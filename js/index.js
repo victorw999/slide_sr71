@@ -56,6 +56,7 @@ for (var i=0; i<inactives.length; i++){
 timelineSwiper.on('slideChangeTransitionStart', function( ){
   // checkActive();
   checkActiveForAudio();
+  checkActiveForVideo();
 });
 
 
@@ -95,5 +96,17 @@ function checkActiveForAudio(){
     audio_slides.querySelector("audio").play();
   }else{
     audio_slides.querySelector("audio").pause();
+  }
+}
+
+// check if slide is active for audio's sake
+// REF:
+function checkActiveForVideo(){
+  var video_slides= document.querySelector(".slide_video");
+   if (hasClass(video_slides, 'swiper-slide-active')){
+    video_slides.querySelector("video").currentTime = 0; // start from beginning
+    video_slides.querySelector("video").play();
+  }else{
+    video_slides.querySelector("video").pause();
   }
 }
