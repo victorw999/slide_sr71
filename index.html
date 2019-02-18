@@ -19,7 +19,6 @@
 
 <body>
 
-
 <div class="container">
   <h1 class="title" style="display:none;">Responsive Slider Timeline</h1>
   <div class="timeline">
@@ -27,84 +26,91 @@
       <div class="swiper-wrapper">
 
         <div id="" class="swiper-slide no-shadow"
-          style="background-image: url(image/background.jpg);" data-year="Title">
+          style="background-image: url(image/background-1st.jpg);background-size:cover;" data-year="Title">
           <div class="swiper-slide-content">
-             <h1>test1</h1>
+          </div>
+        </div>
+
+        <div id="" class="swiper-slide no-shadow"
+          style="background-image: url(image/background-korea.jpg);background-size:cover;" data-year="Korea">
+          <div class="swiper-slide-content">
+            <h4 class="timeline-title"
+            style="background: white; color: #d4a024;
+                  text-align: center; padding: 10px; ">Secret Meeting</h4>
+            <h4 class="timeline-title" style="transition-delay:2s;">Location Unknown</h4>
+          </div>
+        </div>
+
+        <div id="" class="swiper-slide no-shadow"
+          style="background-image: url(image/background-sky.jpg);background-size:cover;" data-year="Explosion">
+          <div class="swiper-slide-content">
+            <h4 class="timeline-title"
+            style="background: white; color: #d4a024;
+                  text-align: center; padding: 10px; ">Mystery Explosion</h4>
+            <h4 class="timeline-title" style="transition-delay:2s;">From Above</h4>
+          </div>
+        </div>
+
+        <div id="" class="swiper-slide no-shadow slide_video"
+          style="background-image: url(image/background.jpg);" data-year="SR-71">
+          <div class="swiper-slide-content">
+            <video style="width:100%;" autoplay="" muted=""  playsinline=""
+              poster="video/sr71_thumb.jpg">
+              <source src="video/sr71.mp4" type="video/mp4">
+            </video>
+          </div> <!-- swiper-slide-content -->
+        </div> <!-- slide_video -->
+
+        <style>
+        .timeline-title.marked{
+          background: white; color: #d4a024;text-align: center; padding: 10px; font-size:2rem;
+        }
+        </style>
+        <div id="" class="swiper-slide no-shadow"
+          style="background-image: url(image/background-shul.jpg);background-size:cover;" data-year="Brian Shul">
+          <div class="swiper-slide-content">
+            <h4 class="timeline-title marked" style="">Brian Shul</h4>
+            <h4 class="timeline-title marked" style="transition-delay:3s;font-size:2rem;background: #000000d6;">Rank: Major</h4>
+            <h4 class="timeline-title marked" style="transition-delay:3s;font-size:1.5rem;background: #000000d6;">USAF 1970-1990</h4>
+            <h4 class="timeline-title marked" style="transition-delay:3s;font-size:2rem;background: #000000d6;"></h4>
+          </div>
+        </div>
+
+        <div id="" class="swiper-slide no-shadow"
+          style="background-image: url(image/background-kadena.jpg);background-size:cover;" data-year="Kadena">
+          <div class="swiper-slide-content">
+            <h4 class="timeline-title marked" style="">Kadena Airbase</h4>
+            <h4 class="timeline-title" style="transition-delay:3s;">Okinawa</h4>
           </div>
         </div>
 
         <div id="" class="swiper-slide no-shadow slide_audio"
-          style="background-image: url(image/background.jpg);" data-year="Title">
+          style="background-image: url(image/background-rainbow.jpg);" data-year="Rainbow">
           <div class="swiper-slide-content">
-            <h1>audio slide</h1>
-             <h1>if placed at other than the 1st slide will trigger audio play</h1>
              <audio id="myAudio" src="audio/rainbow.mp3" preload="auto"></audio>
-
+             <h4 class="timeline-title" style="transition-delay:0s;">The dream that you </h4>
+             <h4 class="timeline-title marked" style="transition-delay:1s;text-align:right;">Dare to Dream</h4>
+             <h4 class="timeline-title" style="transition-delay:2s;">really do come true...</h4>
+             <p class="timeline-title" style="position: absolute; font-size: 16px; text-align: left; margin-left: -45vw;">
+               Song: <em>Somewhere Over the Rainbow</em><br>
+               Movie: The Wizard of Oz
+             </p>
           </div> <!-- swiper-slide-content -->
         </div> <!-- slide_audio -->
 
-
-        <div id="" class="swiper-slide no-shadow slide_video"
-          style="background-image: url(image/background.jpg);" data-year="Title">
+        <div id="" class="swiper-slide no-shadow"
+          style="background-image: url(image/background-england.jpg);background-size:cover;" data-year="England">
           <div class="swiper-slide-content">
-            <video style="width:100%;" autoplay="" muted=""  playsinline=""
-              poster="https://cdn.shopify.com/s/files/1/2313/1393/files/vid_thumb_f517d668-70ae-4a2d-8d6c-d0354a152f13.jpg?7085121300833235741">
-              <source src="video/test2.mp4" type="video/mp4">
-            </video>
-          </div> <!-- swiper-slide-content -->
-        </div> <!-- slide_video -->
-
-        <div id="" class="swiper-slide no-shadow slide_video"
-          style="background-image: url(image/background.jpg);" data-year="Title">
-          <div class="swiper-slide-content">
-            <video style="width:100%;"
-              autoplay="" muted="" loop="" playsinline=""
-              poster="https://cdn.shopify.com/s/files/1/2313/1393/files/vid_thumb_f517d668-70ae-4a2d-8d6c-d0354a152f13.jpg?7085121300833235741">
-              <source src="https://cdn.shopify.com/s/files/1/2313/1393/files/aflex_vidloop_180503.mp4?3191077904938458853" type="video/mp4"></source>
-              <source src="" type="video/webm"></source>
-            </video>
-          </div> <!-- swiper-slide-content -->
-        </div> <!-- slide_video -->
-
-        <div id="" class="swiper-slide no-shadow slide_video"
-          style="background-image: url(image/background.jpg);" data-year="Title">
-          <div class="swiper-slide-content">
-            <video style="width:100%;"
-              autoplay="" muted="false" loop="" playsinline=""
-              poster="https://cdn.shopify.com/s/files/1/2313/1393/files/vid_thumb_f517d668-70ae-4a2d-8d6c-d0354a152f13.jpg?7085121300833235741">
-              <source src="video/test1.mp4" type="video/mp4"></source>
-              <source src="" type="video/webm"></source>
-            </video>
-          </div> <!-- swiper-slide-content -->
-        </div> <!-- slide_video -->
-
-
-
-        <div class="swiper-slide" style="background-image: url(image/01-whitehouse.jpg);" data-year="Nov. 1929">
-          <div class="swiper-slide-content"><span class="timeline-year"> </span>
-            <h4 class="timeline-title"
-            style="background: white; color: #d4a024;
-                  text-align: center; padding: 10px; ">Nov, 1929</h4>
-            <h4 class="timeline-title" style="transition-delay:2s;">Days after stock market crashed...</h4>
           </div>
-
         </div>
 
-        <div class="swiper-slide no-shadow" style="background-image: url(image/smoot.jpg);" data-year="Smoot-Hawley">
-        </div>
+        <div id="" class="swiper-slide no-shadow"
+          style="background-image: url(image/background.jpg);background-size:cover;" data-year="Kadena">
+          <div class="swiper-slide-content">
+            <h4 class="timeline-title marked" style="">The End</h4>
 
-        <div id='panda' class="swiper-slide no-shadow" style="background-image: url(image/background.jpg); " data-year="Epic Battle">
-
-          <div class="swiper-slide-content"><span class="timeline-year"></span>
-            <div class="timeline-title video_area panda"  style=" transition-delay: 1.0s;">
-            </div>
-            <div class="timeline-title video_area eagle" style=" transition-delay: 1.0s;">
-            </div>
           </div>
-        </div> <!-- panda -->
-
-
-
+        </div>
 
 
 

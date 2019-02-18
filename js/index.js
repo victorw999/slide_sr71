@@ -91,7 +91,7 @@ timelineSwiper.on('slideChange', function(swiper, paginationEl){
 // REF: https://stackoverflow.com/questions/27368778/how-to-toggle-audio-play-pause-with-one-button-or-link
 function checkActiveForAudio(){
   var audio_slides= document.querySelector(".slide_audio");
-   if (hasClass(audio_slides, 'swiper-slide-active')){
+  if (hasClass(audio_slides, 'swiper-slide-active')){
     audio_slides.querySelector("audio").currentTime = 0; // start from beginning
     audio_slides.querySelector("audio").play();
   }else{
